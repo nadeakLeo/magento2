@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <tab id="magento_tutorial" 
+            translate="label" 
+            sortOrder="1000">
+            <label>Magento Tutorial</label>
+        </tab>
+        <section id="magento_tutorial_test" 
+            translate="label" 
+            type="text" 
+            sortOrder="1" 
+            showInDefault="1" 
+            showInWebsite="1" 
+            showInStore="1">
+            <label>Source models</label>
+            <tab>magento_tutorial</tab>
+            <resource>Magento_Tutorial::config</resource>
+            <group id="test" 
+            translate="label" 
+            type="text" 
+            sortOrder="1" 
+            showInDefault="1" 
+            showInWebsite="1" 
+            showInStore="1">
+                <label>Source model test</label>
+                <field id="yesno_source_model" 
+                    translate="label" 
+                    type="select" 
+                    sortOrder="1" 
+                    showInDefault="1" 
+                    showInWebsite="1" 
+                    showInStore="1">
+                    <label>Yes/no source model</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>
